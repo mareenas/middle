@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc 3</title>
+    <style>
+        .calc-wrapper {
+            margin: 10px auto;
+            width: 260px;
+            height: 265px;
+            border: 1px solid darkslategray;
+        }
+        .result-container {
+            margin: 3px;
+            border: 1px solid darkslategray;
+            height: 50px;
+            text-align: right;
+            color: darkslategray;
+            font-size: 35px;
+            line-height: 50px;
+            padding-right: 5px;
+        }
+        .numbers-container, .operation-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .number-sign, .clear {
+            border: 1px solid darkslategray;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            margin: 2px auto;
+            color: darkslategray;
+            font-size: 32px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .equals {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .equal-sign {
+            border: 1px solid darkslategray;
+            width: 67%;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            margin: 2px auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="calc-wrapper">
+        <div class="result-container">0</div>
+        <div class="numbers-container">
+            <div class="number-sign">0</div>
+            <div class="number-sign">1</div>
+            <div class="number-sign">2</div>
+            <div class="number-sign">3</div>
+            <div class="number-sign">4</div>
+            <div class="number-sign">5</div>
+            <div class="number-sign">6</div>
+            <div class="number-sign">7</div>
+            <div class="number-sign">8</div>
+            <div class="number-sign">9</div>
+        </div>
+        <div class="operation-container">
+            <div class="number-sign">+</div>
+            <div class="number-sign">-</div>
+            <div class="number-sign">*</div>
+            <div class="number-sign">/</div>
+        </div>
+        <div class="equals">
+            <div class="equal-sign">=</div>
+            <div class="clear">C</div>
+        </div>
+    </div>
+    <script src="calculator3.js"></script>
+    <script src="math.js"></script>
+</body>
+</html>

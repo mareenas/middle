@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            background-color: cadetblue;
+            height: 300px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        .buttons-wrapper {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 1px solid black;
+        }
+        .button {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        .inputs-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 55px;
+        }
+        .input-container {
+            text-align: center;
+            padding: 10px;
+        }
+        .result {
+            text-align: center;
+            padding-top: 30px;
+        }
+        input {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="buttons-wrapper">
+        <div class="button sum">+</div>
+        <div class="button minus">-</div>
+        <div class="button multiply">*</div>
+        <div class="button divide">/</div>
+    </div>
+    <div class="inputs-wrapper">
+        <div class="input-container">
+            <div>
+                Number 1
+            </div>
+            <div>
+                <input type="number" name="first-num" class="num1">
+            </div>
+        </div>
+        <div class="input-container">
+            <div>
+                Number 2
+            </div>
+            <div>
+                <input type="number" name="second-num" class="num2">
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        РЕЗУЛЬТАТ: <span class="result-number"></span>
+    </div>
+</div>
+
+<script src="math.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
