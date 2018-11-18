@@ -9,32 +9,26 @@ let calc1 = {
     num2Value: 0,
     resultField: document.querySelector(".result-number"),
     init: function () {
+        let that = this;
         this.num1.addEventListener('change', function () {
-            this.num1Value = this.num1.value;
-            console.log(this.num1Value);
+            that.num1Value = Number(this.value);
+        });
+        this.num2.addEventListener('change', function () {
+            that.num2Value = Number(this.value);
+        });
+        this.buttonSum.addEventListener('click', function () {
+            that.resultField.textContent = sum(that.num1Value, that.num2Value);
+        });
+        this.buttonMinus.addEventListener('click', function() {
+            that.resultField.textContent = minus(that.num1Value, that.num2Value);
+        });
+        this.buttonMultiply.addEventListener('click', function() {
+            that.resultField.textContent = multiply(that.num1Value, that.num2Value);
+        });
+        this.buttonDivide.addEventListener('click', function() {
+            that.resultField.textContent = divide(that.num1Value, that.num2Value);
         });
     }
 };
+
 calc1.init();
-
-
-num2.addEventListener('change', function () {
-    num2Value = num2.value;
-});
-
-buttonSum.addEventListener('click', function () {
-    resultField.textContent = sum(+num1Value, +num2Value);
-});
-
-buttonMinus.addEventListener('click', function() {
-    resultField.textContent = minus(+num1Value, +num2Value);
-});
-
-buttonMultiply.addEventListener('click', function() {
-    resultField.textContent = multiply(+num1Value, +num2Value);
-});
-
-buttonDivide.addEventListener('click', function() {
-    resultField.textContent = divide(+num1Value, +num2Value);
-});
-

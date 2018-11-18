@@ -3,54 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .container {
-            background-color: cadetblue;
-            height: 300px;
-            width: 400px;
-            margin: 0 auto;
-        }
-        .buttons-wrapper {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            border-bottom: 1px solid black;
-        }
-        .button {
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid black;
-        }
-        .inputs-wrapper {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 55px;
-        }
-        .input-container {
-            text-align: center;
-            padding: 10px;
-        }
-        .result {
-            text-align: center;
-            padding-top: 30px;
-        }
-        input {
-            width: 80px;
-        }
-    </style>
+    <link rel="stylesheet" href="calcs.css">
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="calc1">
     <div class="buttons-wrapper">
-        <div class="button sum">+</div>
-        <div class="button minus">-</div>
-        <div class="button multiply">*</div>
-        <div class="button divide">/</div>
+        <div class="button buttons1 sum">+</div>
+        <div class="button buttons1 minus">-</div>
+        <div class="button buttons1 multiply">*</div>
+        <div class="button buttons1 divide">/</div>
     </div>
     <div class="inputs-wrapper">
         <div class="input-container">
@@ -76,6 +38,6 @@
 </div>
 
 <script src="math.js"></script>
-<script src="calculator.js"></script>
+<script src="calculator1.js"></script>
 </body>
 </html>
